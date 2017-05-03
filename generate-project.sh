@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#!/bin/sh
-
 # ##################################################
 # Maven Grizzly Project Generator
 version="1.0.0"
