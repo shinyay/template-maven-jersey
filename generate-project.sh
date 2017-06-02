@@ -1,17 +1,18 @@
 #!/bin/sh
 
-# ##################################################
+#############################################################
 # Maven Grizzly Project Generator
 version="1.0.0"
 #
 # HISTORY:
 #
+# * 17/06/02 - v1.0.1  - Artifact Version Up to b04 from b03
 # * 17/04/09 - v1.0.0  - First Creation
 #
-# ##################################################
+#############################################################
 
 # https://maven-repository.com/artifact/org.glassfish.jersey.archetypes/jersey-quickstart-grizzly2
-JERSEY_QUICKSTART_GRIZZLY2_VERSION=2.26-b03
+JERSEY_QUICKSTART_GRIZZLY2_VERSION=2.26-b04
 
 GROUP_ID="$1"
 ARTIFACT_ID="$2"
