@@ -15,15 +15,22 @@ import java.util.Optional;
 public class Main {
     public static final String BASE_URI;
     public static final String PROTOCOL;
-    public static final Optional<String> HOST;
+    public static String HOST;
+    public static final String HOST_LOCALHOST = "localhost";
+    public static final String HOST_DEFAULT_ROOT = "0.0.0.0";
     public static final Optional<String> PORT;
+    public static final Optional<String> APP_HOME;
 
     static{
         PROTOCOL = "http://";
-        HOST = Optional.ofNullable(System.getenv("HOSTNAME"));
+        HOST = HOST_LOCALHOST;
         PORT = Optional.ofNullable(System.getenv("PORT"));
+        APP_HOME = Optional.ofNullable(System.getenv("APP_HOME"));
+        if(APP_HOME.isPresent()){
+            HOST = HOST_DEFAULT_ROOT;
+        }
         BASE_URI = PROTOCOL
-                + HOST.orElseGet(() -> "localhost")
+                + HOST
                 + ":"
                 + PORT.orElseGet(() -> "8080")
                 + "/";
