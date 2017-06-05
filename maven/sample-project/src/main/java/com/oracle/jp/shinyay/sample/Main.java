@@ -17,19 +17,15 @@ public class Main {
     public static final String PROTOCOL;
     public static final Optional<String> HOST;
     public static final Optional<String> PORT;
-    public static final String PATH;
 
     static{
         PROTOCOL = "http://";
         HOST = Optional.ofNullable(System.getenv("HOSTNAME"));
         PORT = Optional.ofNullable(System.getenv("PORT"));
-        PATH = "myapp";
         BASE_URI = PROTOCOL
                 + HOST.orElseGet(() -> "localhost")
                 + ":"
                 + PORT.orElseGet(() -> "8080")
-                + "/"
-                + PATH
                 + "/";
     }
 

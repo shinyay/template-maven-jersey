@@ -34,7 +34,7 @@ public class MyResourceTest {
 
     @After
     public void tearDown() throws Exception {
-        server.stop();
+        server.shutdown();
     }
 
     /**
@@ -42,7 +42,7 @@ public class MyResourceTest {
      */
     @Test
     public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
+        String responseMsg = target.path("sample").request().get(String.class);
         assertEquals("Got it!", responseMsg);
     }
 }
