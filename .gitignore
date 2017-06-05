@@ -1,3 +1,4 @@
 maven/sample-project/target/
 maven/sample-project/.idea/
 maven/sample-project/dependency-reduced-pom.xml
+maven/sample-project/*.iml
