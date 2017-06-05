@@ -1,0 +1,6 @@
+{
+	"runtime": {
+	  "majorVersion": "8"
+	},
+	"command": "java -jar sample-project-1.0.0-SNAPSHOT.jar"
+}
