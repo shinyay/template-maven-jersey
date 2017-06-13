@@ -1,6 +1,12 @@
 {
-	"runtime": {
-	  "majorVersion": "8"
-	},
-	"command": "java -jar sample-project-1.0.0-SNAPSHOT.jar"
+  "runtime": {
+    "majorVersion": "8"
+  },
+  "command": "java -jar sample-project-1.0.0-SNAPSHOT.jar",
+  "startupTime": 30,
+  "shutdownTime": 0,
+  "isClustered": false,
+  "requiresAntiAffinity": false,
+  "release": {},
+  "notes": "Embedded Tomcat Servlet Application"
 }
